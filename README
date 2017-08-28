@@ -1,0 +1,5 @@
+Simple Use:
+- docker run -p 1812:1812/udp -d diksy/freeradius
+
+Persistent Data & Log (*all dir must be rsync first to prevent ownership):
+- docker run -p 1812:1812/udp -v /path/to/host/conf:/etc/freeradius/3.0 -v /path/to/host/log:/var/log/freeradius -d  diksy/freeradius
